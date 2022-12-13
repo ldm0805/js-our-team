@@ -8,17 +8,17 @@ let member = [
     {
     name: "Angela Caroll",
     role: "Chief Editor",
-    image: "angella-caroll-chief-editor.jpg",
+    image: "angela-caroll-chief-editor.jpg",
     },
     {
     name: "Walter Gordon",
     role: "Office Menager",
-    image: "walter-gordon-office-menager.jpg",
+    image: "walter-gordon-office-manager.jpg",
     },
     {
     name: "Angela Lopez",
     role: "Social Media Menager",
-    image: "angela-lopez-social-media-menager.jpg",
+    image: "angela-lopez-social-media-manager.jpg",
     },
     {
     name: "Scott Estrada",
@@ -45,14 +45,14 @@ for(let i=0; i<member.length;i++){
 //Milestone 2
 const card_item_container = document.querySelector('.cards')
 
-let card_item;
-
 for(let i=0; i < member.length; i++){
-    card_item = document.createElement('div')
-    let photo = document.createElement('div')
+    let card_item = document.createElement('div')
+    let src = document.getElementById("img_id");
+    let img = document.createElement("img");
+    img.src = `./img/${member[i].image}`;
     card_item.innerText = `Nome: ${member[i].name} 
                            Ruolo: ${member[i].role} 
                            Tag immagine: ${member[i].image}`;
-    
+    src.appendChild(img);
     card_item_container.append(card_item);
 }
