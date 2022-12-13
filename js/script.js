@@ -8,17 +8,17 @@ let member = [
     {
     name: "Angela Caroll",
     role: "Chief Editor",
-    image: "angella-caroll-chief-editor.jpg",
+    image: "angela-caroll-chief-editor.jpg",
     },
     {
     name: "Walter Gordon",
     role: "Office Menager",
-    image: "walter-gordon-office-menager.jpg",
+    image: "walter-gordon-office-manager.jpg",
     },
     {
     name: "Angela Lopez",
     role: "Social Media Menager",
-    image: "angela-lopez-social-media-menager.jpg",
+    image: "angela-lopez-social-media-manager.jpg",
     },
     {
     name: "Scott Estrada",
