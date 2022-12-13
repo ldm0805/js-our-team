@@ -35,20 +35,24 @@ let member = [
 let data_member = member;
 
 //Milestone 1
-for(let key in data_member){
-    console.log(data_member[key])
-}
+for(let i=0; i<member.length;i++){
+      let data_member = member[i];
+      console.log(data_member.name)
+      console.log(data_member.role)
+      console.log(data_member.image)
+  }
 
 //Milestone 2
 const card_item_container = document.querySelector('.cards')
 
-let card_item, container_card;
+let card_item;
 
 for(let i=0; i < member.length; i++){
     card_item = document.createElement('div')
-    card_item.classList.add('text')
+    let photo = document.createElement('div')
     card_item.innerText = `Nome: ${member[i].name} 
-    Ruolo: ${member[i].role} 
-    Tag immagine: ${member[i].image}`;
+                           Ruolo: ${member[i].role} 
+                           Tag immagine: ${member[i].image}`;
+    
     card_item_container.append(card_item);
 }

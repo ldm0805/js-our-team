@@ -49,8 +49,10 @@ let card_item;
 
 for(let i=0; i < member.length; i++){
     card_item = document.createElement('div')
+    let photo = document.createElement('div')
     card_item.innerText = `Nome: ${member[i].name} 
                            Ruolo: ${member[i].role} 
                            Tag immagine: ${member[i].image}`;
+    
     card_item_container.append(card_item);
 }
