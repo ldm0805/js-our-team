@@ -33,6 +33,7 @@ let member = [
 ]
 
 let data_member = member;
+
 //Milestone 1
 for(let i=0; i<member.length;i++){
       let data_member = member[i];
