@@ -1,3 +1,4 @@
+//Creazione Array con le informazioni fornite
 let member = [
     {
     name: "Wayne Barnett",
@@ -31,21 +32,22 @@ let member = [
     },
 ]
 
-console.log(member)
-
 let data_member = member;
 
+//Milestone 1
 for(let key in data_member){
     console.log(data_member[key])
 }
 
+//Milestone 2
 const card_item_container = document.querySelector('.cards')
+
 let card_item, container_card;
+
 for(let i=0; i < member.length; i++){
     card_item = document.createElement('div')
-    card_item.innerText = `Nome: : ${member[i].name} 
-    Ruolo: : ${member[i].role} 
-    Tag immagine: : ${member[i].image}`;
-    card_item.classList.add('text')
+    card_item.innerText = `Nome: ${member[i].name} 
+    Ruolo: ${member[i].role} 
+    Tag immagine: ${member[i].image}`;
     card_item_container.append(card_item);
 }
