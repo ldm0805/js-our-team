@@ -46,6 +46,7 @@ let card_item, container_card;
 
 for(let i=0; i < member.length; i++){
     card_item = document.createElement('div')
+    card_item.classList.add('text')
     card_item.innerText = `Nome: ${member[i].name} 
     Ruolo: ${member[i].role} 
     Tag immagine: ${member[i].image}`;
