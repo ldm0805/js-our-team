@@ -31,3 +31,4 @@ let member = [
     },
 ]
 
+console.log(member)
