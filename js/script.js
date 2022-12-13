@@ -32,3 +32,14 @@ let member = [
 ]
 
 console.log(member)
+
+//  for(let i=0; i<member.length;i++){
+//      let data_member = member[i];
+//      console.log(`Il nome di questo membro è ${data_member.name}, il ruolo di questo membro è ${data_member.role}, la stringa della foto di questo membro è ${data_member.image}`);
+//  }
+
+let data_member = member;
+
+for(let key in data_member){
+    console.log(data_member[key])
+}
