@@ -35,7 +35,8 @@ let member = [
 let data_member = member;
 
 //Milestone 1
-for(let i=0; i<member.length;i++){
+
+for(let i=0; i< member.length; i++){
       let data_member = member[i];
       console.log(data_member.name)
       console.log(data_member.role)
@@ -50,6 +51,6 @@ for(let i=0; i < member.length; i++){
     card_item.className = "card";
     card_item.innerHTML = `<img class="card-img-top" src="./img/${member[i].image}">
                            <div class="text">Nome: ${member[i].name} 
-                           Ruolo: ${member[i].role}</div>`;
+                           <div>Ruolo: ${member[i].role}</div></div>`;
     card_item_container.append(card_item);
 }
