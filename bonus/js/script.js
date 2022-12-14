@@ -47,9 +47,9 @@ const card_item_container = document.querySelector('.cards')
 
 for(let i=0; i < member.length; i++){
     let card_item = document.createElement('div')
-    card_item.className = "card_class";
-    card_item.innerHTML = `<div class="text">Nome: ${member[i].name} 
-                           Ruolo: ${member[i].role}</div>
-                           <img src="./img/${member[i].image}">`;
+    card_item.className = "card";
+    card_item.innerHTML = `<img class="card-img-top" src="./img/${member[i].image}">
+                           <div class="text">Nome: ${member[i].name} 
+                           Ruolo: ${member[i].role}</div>`;
     card_item_container.append(card_item);
 }
