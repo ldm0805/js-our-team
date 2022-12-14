@@ -32,25 +32,16 @@ let member = [
     },
 ]
 
-let data_member = member;
+  const card_item_container = document.querySelector('.cards')
 
-//Milestone 1
+  //Bonus 2
 
-for(let i=0; i< member.length; i++){
-      let data_member = member[i];
-      console.log(data_member.name)
-      console.log(data_member.role)
-      console.log(data_member.image)
-  }
-
-//Milestone 2
-const card_item_container = document.querySelector('.cards')
-
-for(let i=0; i < member.length; i++){
+  for(let i=0; i < member.length; i++){
+    let data_member = member[i];
     let card_item = document.createElement('div')
     card_item.className = "card";
-    card_item.innerHTML = `<img class="card-img-top" src="./img/${member[i].image}">
-                           <div class="text">Nome: ${member[i].name} 
-                           <div>Ruolo: ${member[i].role}</div></div>`;
+    card_item.innerHTML += `<img class="card-img-top" src="./img/${data_member.image}">
+                           <div class="text">Nome: ${data_member.name} 
+                           <div>Ruolo: ${data_member.role}</div></div>`;
     card_item_container.append(card_item);
 }
